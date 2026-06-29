@@ -21,8 +21,6 @@ setup(
         'console_scripts': [
             'diagnostics_subscriber = go2_mission.diagnostics_subscriber:main',
             'mission_manager = go2_mission.mission_manager:main',
-            'toplight_detector = go2_mission.toplight_detector:main',
-            'hsv_tuner = go2_mission.hsv_tuner:main',
         ],
     },
 )

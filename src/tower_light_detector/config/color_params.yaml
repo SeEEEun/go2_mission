@@ -1,0 +1,22 @@
+# HSV color thresholds for tower light detection
+# Tune these values using: python3 -m tower_light_detector.calibrate_hsv
+#
+# Note: Hue range is 0-180 in OpenCV (not 0-360)
+# Red wraps around 0/180, so two ranges are needed.
+
+tower_light_detector:
+  ros__parameters:
+    camera_index: 0
+    fps: 10
+    show_debug: true
+
+    # ROI (set roi_w > 0 to restrict detection area)
+    roi_x: 0
+    roi_y: 0
+    roi_w: 0   # 0 = full frame
+    roi_h: 0
+
+# Color threshold reference (edit color_utils.py to apply changes):
+# red:    H=[0-10] + [165-180], S>=100, V>=100
+# yellow: H=[15-40],            S>=100, V>=100
+# green:  H=[40-90],            S>=80,  V>=80

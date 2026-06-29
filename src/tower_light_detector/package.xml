@@ -1,16 +1,17 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>go2_mission</name>
-  <version>0.0.1</version>
-  <description>GO2 EDU ICROS 2026 대회 패키지</description>
+  <name>tower_light_detector</name>
+  <version>0.1.0</version>
+  <description>
+    Webcam-based tower light (stack light) color detector for ROS 2.
+    Publishes detected color and dispatches mission actions for competition use.
+  </description>
   <maintainer email="vkrtp2@gmail.com">jeonbotdae</maintainer>
-  <license>Apache-2.0</license>
+  <license>MIT</license>
 
-  <exec_depend>rclpy</exec_depend>
-  <exec_depend>diagnostic_msgs</exec_depend>
-
-  <buildtool_depend>ament_python</buildtool_depend>
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

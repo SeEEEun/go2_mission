@@ -78,7 +78,7 @@ class MissionManager(Node):
         self.create_subscription(DiagnosticArray, '/factory/diagnostics',
                                  self._diag_callback, diag_qos)
         self.create_subscription(Odometry, '/odom', self._odom_callback, 10)
-        self.create_subscription(String, '/toplight/color',
+        self.create_subscription(String, '/tower_light/color',
                                  self._toplight_callback, 10)
 
         # ── 발행 ──
